@@ -1,0 +1,71 @@
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.subtitle {
+    opacity: 0%;
+    animation: fade-in 1s linear forwards;
+    animation-delay: 0.5s;
+    cursor: default;
+}
+
+.title {
+    opacity: 0%;
+    animation: fade-in 1s linear forwards;
+    animation-delay: 0.625s;
+    cursor: default;
+    white-space: nowrap;
+    background-clip: text;
+}
+
+.desc {
+    opacity: 0%;
+    animation: fade-in 1s linear forwards;
+    animation-delay: 0.75s;
+    cursor: default;
+}
+
+.buttoncase {
+    opacity: 0%;
+    animation: fade-in 1s linear forwards;
+    animation-delay: 0.875s;
+}
+
+.backbutton {
+    cursor: default;
+    opacity: 50%;
+}
+
+.backbutton:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.main_body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    #005000;
+    position: absolute;
+    z-index: 0;
+}
+
+.notfound_body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    #500000;
+    position: absolute;
+    z-index: 0;
+}
