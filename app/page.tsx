@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Particles from "../components/particles";
 import styles from './styles.module.css'
+import { IoBuildSharp } from "react-icons/io5";
 
 const navigation = [
   { name: "About", href: "/about" },
@@ -26,6 +27,7 @@ export default function Home() {
         <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={100}/>
         <h1 className={`${styles.title} mt-2 text-5xl sm:text-6xl md:text-8xl text-white/90 font-display`}>devFriox</h1>
         <h2 className={`${styles.desc} mt-8 text-xl text-white/30`}>a developer who explores deep space</h2>
+        <div className={`${styles.version} flex items-center mt-8 text-white/15`}><IoBuildSharp/>&nbsp;{process.env.VERSION}</div>
       </div>
     </div>
   );
