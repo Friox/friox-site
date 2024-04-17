@@ -60,9 +60,11 @@ USER nextjs
 
 EXPOSE 3000
 
+ARG VERSION="default"
+
 ENV PORT 3000
 
-ENV VERSION UNKNOWN
+ENV VERSION ${VERSION}
 
 # server.js is created by next build from the standalone output
 # https://nextjs.org/docs/pages/api-reference/next-config-js/output
