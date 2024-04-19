@@ -27,7 +27,7 @@ export default function Home() {
         <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={100}/>
         <h1 className={`${styles.title} mt-2 duration-500 text-6xl sm:text-7xl md:text-8xl text-white/90 font-display`}>devFriox</h1>
         <h2 className={`${styles.desc} mt-8 duration-500 text-xs sm:text-sm md:text-xl text-white/30`}>a developer who explores deep space</h2>
-        <div className={`${styles.version} flex duration-500 text-xs sm:text-sm md:text-xl items-center mt-8 text-white/15`}><IoBuildSharp/>&nbsp;{process.env.NEXT_PUBLIC_VERSION}version</div>
+        <div className={`${styles.version} flex duration-500 text-xs sm:text-sm md:text-xl items-center mt-8 text-white/15`}><IoBuildSharp/>&nbsp;{process.env.NEXT_PUBLIC_VERSION}</div>
       </div>
     </div>
   );
