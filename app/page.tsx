@@ -18,16 +18,16 @@ export default function Home() {
         <nav className={`${styles.subtitle} mb-8`}>
           <ul className="flex items-center justify-center gap-4">
             {navigation.map((item) => (
-              <Link key={item.href} href={item.href} className="text-sm duration-500 text-zinc-500 hover:text-zinc-300">
+              <Link key={item.href} href={item.href} className="text-xs sm:text-sm duration-500 text-zinc-500 hover:text-zinc-300">
                 {item.name}
               </Link>
             ))}
           </ul>
         </nav>
         <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={100}/>
-        <h1 className={`${styles.title} mt-2 text-5xl sm:text-6xl md:text-8xl text-white/90 font-display`}>devFriox</h1>
-        <h2 className={`${styles.desc} mt-8 text-xl text-white/30`}>a developer who explores deep space</h2>
-        <div className={`${styles.version} flex items-center mt-8 text-white/15`}><IoBuildSharp/>&nbsp;{process.env.NEXT_PUBLIC_VERSION}</div>
+        <h1 className={`${styles.title} mt-2 duration-500 text-6xl sm:text-7xl md:text-8xl text-white/90 font-display`}>devFriox</h1>
+        <h2 className={`${styles.desc} mt-8 duration-500 text-xs sm:text-sm md:text-xl text-white/30`}>a developer who explores deep space</h2>
+        <div className={`${styles.version} flex duration-500 text-xs sm:text-sm md:text-xl items-center mt-8 text-white/15`}><IoBuildSharp/>&nbsp;{process.env.NEXT_PUBLIC_VERSION}</div>
       </div>
     </div>
   );
